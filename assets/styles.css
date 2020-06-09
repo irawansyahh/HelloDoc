@@ -1,0 +1,139 @@
+.bg-blue{
+	background: #006bff;
+}
+.bg-darkblue{
+	background: #245d9f;
+}
+.head h1, .head h3{
+	padding-bottom: 8px;
+}
+.btn-orange{
+	background: #F96D01;
+}
+.frmCari{
+	position: relative;
+}
+.btnCari{
+	position: absolute;
+	width: 120px;
+	bottom: 10px;
+	left: 77%;
+}
+.card-head{
+	width: 150px;
+	height: 60px;
+	position: relative;
+	left: 38%;
+	bottom: 40px;
+	margin-bottom: 50px;
+}
+.icon-head{
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	padding-left: 12px;
+	position: relative;
+	top: 8px;
+}
+.menu-head p{
+	position: relative;
+	top: 10px;
+}
+.menu-head{
+	padding: 32px;
+	margin-left: 24px; 
+
+}
+.diagnosa{
+	margin-right: 32px;
+}
+.highlight{
+	margin-bottom: 16px;
+}
+.kesehatan, .info-sehat{
+	padding-left: 0px;
+	padding-top: 0px;
+}
+.info-sehat{
+	margin-left: 24px;
+}
+.card-head p{
+	font-size: 14px;
+}
+.kesehatan{
+	/*position: relative;*/
+}
+
+/*Tanya Dokter*/
+.author{
+	border-radius: 100%;
+}
+.txt-tanya,.btn-tanya{
+	margin-bottom: 24px;
+}
+.txt-tanya{
+	font-size: 24px;
+}
+.tanya{
+	padding-left: 80px;
+	padding-top: 40px;
+}
+.box-filter {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    border: solid 1px #dadee4;
+    margin: 24px;
+}
+.kota{
+	margin: 24px;
+}
+.button-fb {
+    background-position: 24px 6px;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-color: #3c589e;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 0;
+    display: block;
+    color: #fff;
+}
+.search{
+    width: 362px;
+    height: 42px;
+    padding: 1px 0px 1px 40px;
+    font-size: 14px;
+}
+.menu-size{
+    font-size: 14px;
+    margin-right: 30px;
+    margin-left: -30px;
+}
+.box-filter .box-profile{
+    width: 300px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    border: solid 1px #dadee4;
+    margin-bottom: 20px;
+}
+
+p > .profile-name {
+    font-weight: bold;
+    width: 170px;
+    margin: 0 auto;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

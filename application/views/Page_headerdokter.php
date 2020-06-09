@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HelloDoc!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
+  <link rel="stylesheet" href="<?= base_url('assets/caridokter.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Detaildokter.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Page_footer.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Profildokter.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Editprofil.css')?>">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <script src="https://cdn.ckeditor.com/4.11.3/basic/ckeditor.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/hello.ico')?>">
+
+  
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-blue fixed-top" style="border-bottom: 1px solid #dadee4; background: #006bff;">
+  <a class="navbar-brand" href="<?= base_url('index.php/home')?>"><img src="<?= base_url('assets/hellodoc.png')?>" width="120px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+         <form class="form-inline my-2 my-lg-0">
+            <i><img src="<?= base_url('assets/search2.png')?>" width="15px;" style="position:absolute; left: 170px; margin-top:-7px;"></i>
+            <input class="form-control searchInput" type="search" placeholder="Cari di HelloDoc!" aria-label="Search">
+          </form>
+      </li>
+    </ul>
+   
+    <ul class="navbar-nav">
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="#" style="margin-right:-30px;">Info Kesehatan <span class="sr-only">(current)</span></a>
+      </li> -->
+      <li class="nav-item active">
+        <a class="nav-link menu-size" href="<?= base_url('index.php/caridokter')?>" style="color: white;">Cari Dokter <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link menu-size" href="<?= base_url('index.php/cariRS')?>" style="color: white;">Cari Rumah Sakit <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link menu-size" href="<?= base_url('index.php/tanya')?>" style="color: white;">Tanya Dokter <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+      <?php
+          if($this->simple_login->cek_login() == true){
+           ?>
+            <li class="dropdown pull-right">
+              <a class="dropdown-toggle usrname" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+                <?= $this->session->userdata('username')?><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?= base_url('index.php/Profile_controller')?>" class="nav-link" style="text-align: left; color:#3570D2; margin-left:0px;">Profile</a></li>
+                <li  style="text-align:left; color:#3570D2; margin-left:10px; font-size:14px;"><a href="#"class="nav-link"><?= anchor('login_controller/logout','Logout');?></a></li>
+              </ul>
+              <!-- <button class="btn btn-primary btn-download">Download Aplikasi</button> -->
+            </li>
+      
+        <?php 
+          }else{
+         ?>
+            <a href="<?= base_url('index.php/login_controller');?>" class="btn btn-outline-info btn-primary" style="margin-right: 8px; margin-left: 8px;">Masuk</a>
+            <!-- <button class="btn btn-md btn-primary">Download Aplikasi</button> -->
+         <?php   
+          }
+        ?>
+      </li>
+    </ul>
+
+  </div>
+</nav>

@@ -1,0 +1,81 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 1000px;
+    margin-top: 150px;
+    padding: 0;
+    display: flex;
+    margin-left: 100px;
+    justify-content: space-between;
+}
+.ulist{
+    list-style-type: none;
+}
+
+.doctor-scroll-menu-view {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-bottom: 1px solid #dadee4;
+    padding: 0;
+    text-decoration: none;
+    color: #3570d2;
+    cursor: pointer;
+}
+
+a.nav-link{
+    margin-left: 25px;
+   
+}
+
+
+#button{
+    margin-bottom: 20px;
+}
+
+a.btn-doctor{
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 0;
+    border-radius: 3px;
+    color: #FFFFFF;
+    margin-top: -32px;
+}
+
+a.btn-doctor:hover{
+    background-color:  #f96d01;
+    color: #FFFFFF;
+}
+
+
+.box-filter .box-doctor{
+    width: 300px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    border: solid 1px #dadee4;
+    margin-bottom: 20px;
+}
+
+.card-doctor-profil{
+    text-align: center;
+
+}
+
+
+p > .doctor-name {
+    font-weight: bold;
+    width: 170px;
+    margin: 0 auto;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
